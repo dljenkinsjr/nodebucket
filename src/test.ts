@@ -1,3 +1,11 @@
+/*============================================;
+Title: nodebucket;
+Author: Professor Krasso ;
+Date: 18 March 2021;
+Modified By: Douglas Jenkins;
+Description: creating a sign in page
+;===========================================*/
+
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 
 import 'zone.js/dist/zone-testing';

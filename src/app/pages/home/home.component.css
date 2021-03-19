@@ -1,14 +1,21 @@
+/*============================================;
+Title: nodebucket;
+Author: Professor Krasso ;
+Date: 18 March 2021;
+Modified By: Douglas Jenkins;
+Description: creating a sign in page
+;===========================================*/
+
 .main-welcome {
     margin-top: 30px;
   }
-  
+
   .title {
     text-align: center;
     font-weight: lighter;
   }
-  
+
   .subtitle {
     text-align: center;
     font-size: 14px;
   }
-  
