@@ -1,9 +1,9 @@
 /*============================================;
 Title: nodebucket;
 Author: Professor Krasso ;
-Date: 18 March 2021;
+Date: 24 March 2021;
 Modified By: Douglas Jenkins;
-Description: creating a sign in page
+Description: creating the tasks for soap ui
 ;===========================================*/
 
 import { HomeComponent } from './pages/home/home.component';
@@ -37,6 +37,10 @@ const routes: Routes = [
         component: LoginComponent
       }
     ]
+  }, // recently added if you face any errors remove
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 
