@@ -334,7 +334,7 @@ router.delete('/:empId/tasks/:taskId', async(req, res) => {
 
                     const deleteDoneItemSuccess = new BaseResponse('200', 'Successful Query', updatedDoneItemEmployee);
 
-                    res.status(200).send(updatedDoneItemEmployee.toObject());
+                    res.status(200).send(deleteDoneItemSuccess.toObject());
 
                   }
                 })

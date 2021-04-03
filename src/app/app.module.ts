@@ -1,3 +1,11 @@
+/*============================================;
+Title: nodebucket;
+Author: Professor Krasso ;
+Date: 18 March 2021;
+Modified By: Douglas Jenkins;
+Description: creating a sign in page
+;===========================================*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,13 +17,6 @@ import { BaseLayoutComponent } from './shared/base-layout/base-layout.component'
 import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
-/*============================================;
-Title: nodebucket;
-Author: Professor Krasso ;
-Date: 18 March 2021;
-Modified By: Douglas Jenkins;
-Description: creating a sign in page
-;===========================================*/
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -27,6 +28,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CreateTaskDialogComponent } from './shared/create-task-dialog/create-task-dialog.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { AboutComponent } from './pages/about/about.component';
+
 
 
 @NgModule({
@@ -35,7 +44,11 @@ import { MatSnackBarModule} from '@angular/material/snack-bar';
     HomeComponent,
     BaseLayoutComponent,
     AuthLayoutComponent,
-    LoginComponent
+    LoginComponent,
+    CreateTaskDialogComponent,
+    ContactComponent,
+    NotFoundComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +64,10 @@ import { MatSnackBarModule} from '@angular/material/snack-bar';
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    DragDropModule,
+    MatMenuModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
