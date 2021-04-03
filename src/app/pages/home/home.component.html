@@ -23,7 +23,7 @@ Description: creating a sign in page
  <!--Create Task-->
  <div fxFlex>
   <div fxLayout="column" class="task-container">
-    <button mat-raised-button color="primary" (click)="openCreateTaskDialog()">Create Task +</button>
+    <button class="button-create" mat-raised-button color="primary" (click)="openCreateTaskDialog()">Create Task +</button>
   </div>
 </div>
 <!--end of create task -->
@@ -31,12 +31,12 @@ Description: creating a sign in page
 <!--Task Columns-->
 <div fxFlex>
 
-  <div fxLayout="row" fxLayoutGap="15px" class="task-container">
+  <div fxLayout="row" fxLayoutGap="20px" class="task-container">
 
 
   <!--ToDo-->
   <div fxFlex>
-    <mat-card>
+    <mat-card class="back">
       <mat-card-title>To Do</mat-card-title>
 
       <mat-card-content>
@@ -49,7 +49,7 @@ Description: creating a sign in page
         #todoList="cdkDropList"
         [cdkDropListData] ="todo"
         [cdkDropListConnectedTo]="[doneList]"
-        (cdkDropListDropped)="drop($event)" >
+        (cdkDropListDropped)="drop($event)">
 
 
         <div *ngFor="let item of todo" cdkDrag>
@@ -94,7 +94,7 @@ Description: creating a sign in page
   <!--Done-->
   <div fxFlex>
 
-    <mat-card>
+    <mat-card class="back">
       <mat-card-title>Done</mat-card-title>
 
       <mat-card-content>

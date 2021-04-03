@@ -1,28 +1,28 @@
 /*============================================;
 Title: nodebucket;
 Author: Professor Krasso ;
-Date: 31 March 2021;
+Date: 2 April 2021;
 Modified By: Douglas Jenkins;
-Description: Creating the UI page
+Description: built remaining pages
 ;===========================================*/
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreateTaskDialogComponent } from './create-task-dialog.component';
+import { ContactComponent } from './contact.component';
 
-describe('CreateTaskDialogComponent', () => {
-  let component: CreateTaskDialogComponent;
-  let fixture: ComponentFixture<CreateTaskDialogComponent>;
+describe('ContactComponent', () => {
+  let component: ContactComponent;
+  let fixture: ComponentFixture<ContactComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CreateTaskDialogComponent ]
+      declarations: [ ContactComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CreateTaskDialogComponent);
+    fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

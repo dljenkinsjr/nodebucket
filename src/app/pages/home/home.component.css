@@ -10,6 +10,11 @@ Description: creating a sign in page
     margin-top: 30px;
   }
 
+  .button-create{
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
   .title {
     text-align: center;
     font-weight: lighter;
@@ -41,7 +46,7 @@ Description: creating a sign in page
 }
 
 .task-container {
-  width: 35%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -65,4 +70,13 @@ Description: creating a sign in page
   align-items: center;
 }
 
+.back{
+  background-color:#eaeaea;
+}
 
+
+@media screen and (max-width: 800px) {
+  .task-container{
+    width: 80%;
+  }
+}

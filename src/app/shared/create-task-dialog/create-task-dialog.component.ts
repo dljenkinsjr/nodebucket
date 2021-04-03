@@ -22,7 +22,7 @@ export class CreateTaskDialogComponent implements OnInit {
   constructor(private dialogRef: MatDialogRef<CreateTaskDialogComponent>, private fb: FormBuilder) { }
 
   /**
-   *
+   * creates the form to write in
    */
   ngOnInit(): void {
     this.taskForm = this.fb.group({
@@ -31,7 +31,7 @@ export class CreateTaskDialogComponent implements OnInit {
   }
 
   /**
-   *
+   * allows to close the form
    */
   createTask() {
     this.dialogRef.close(this.taskForm.value);

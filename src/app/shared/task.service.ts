@@ -1,3 +1,11 @@
+/*============================================;
+Title: nodebucket;
+Author: Professor Krasso ;
+Date: 31 March 2021;
+Modified By: Douglas Jenkins;
+Description: Creating the UI page
+;===========================================*/
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';

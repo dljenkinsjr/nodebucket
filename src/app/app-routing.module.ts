@@ -14,6 +14,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './shared/auth.guard';
+import { ContactComponent } from './pages/contact/contact.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { AboutComponent } from './pages/about/about.component';
+
 
 //creates the route to display the login page
 const routes: Routes = [
@@ -25,6 +29,14 @@ const routes: Routes = [
         path: '',
         component: HomeComponent,
         canActivate: [AuthGuard]
+      },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
       }
     ]
   },
@@ -35,13 +47,22 @@ const routes: Routes = [
       {
         path: 'login',
         component: LoginComponent
+      },
+      {
+        path: 'not-found',
+        component: NotFoundComponent
       }
     ]
   }, // recently added if you face any errors remove
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'session/not-found'
   }
+
 ];
 
 @NgModule({
