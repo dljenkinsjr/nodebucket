@@ -5,6 +5,9 @@ Date: 18 March 2021;
 Modified By: Douglas Jenkins;
 Description: creating a sign in page
 ;===========================================*/
+body{
+  height: auto;
+}
 
 .logo {
     font-size: 24px;
@@ -25,14 +28,20 @@ Description: creating a sign in page
 
   .main-content {
     padding-left: 30px;
+    padding-bottom: 5rem;
   }
 
+  .page-container{
+    position: relative;
+    min-height: 100vh;
+  }
 
   .footer {
+    position: absolute;
     width: 100%;
     margin-top: 20px;
     clear: both;
-    position: fixed;
+    left: 0;
     bottom: 0;
   }
 
@@ -89,8 +98,10 @@ Description: creating a sign in page
   @media screen and (max-width: 600px) {
 
     .logo, .navbar-link {
-      font-size: 16px;
+      font-size: 13.5px;
       font-weight: lighter;
       float: left;
     }
   }
+
+
