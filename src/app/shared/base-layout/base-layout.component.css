@@ -9,15 +9,18 @@ body{
   height: auto;
 }
 
+/*
 .logo {
     font-size: 24px;
     font-weight: lighter;
     float: left;
     margin-left: 74px;
   }
+*/
 
   .navbar-container {
     padding: 5px;
+    margin: auto;
   }
 
   .navbar-link {
@@ -102,10 +105,8 @@ body{
       float: left;
     }
 
-    .navbar-container  {
-      width: 100%;
-      margin: auto;
-
+    .navbar-container {
+      padding: 5px;
     }
   }
 
@@ -118,11 +119,6 @@ body{
       float: left;
     }
 
-    .footer-content {
-      font-size: 10px;
-      font-weight: lighter;
-      letter-spacing: 3px;
-    }
 
   }
 
