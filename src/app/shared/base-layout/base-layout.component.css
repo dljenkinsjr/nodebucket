@@ -101,6 +101,12 @@ body{
       font-weight: lighter;
       float: left;
     }
+
+    .navbar-container  {
+      width: 100%;
+      margin: auto;
+
+    }
   }
 
 
