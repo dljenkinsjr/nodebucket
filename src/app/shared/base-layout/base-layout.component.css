@@ -52,7 +52,7 @@ body{
   }
 
   .footer-content p {
-    margin-left: 74px;
+    margin: auto;
   }
 
 
@@ -70,7 +70,6 @@ body{
   @media screen and (max-width: 800px) {
     footer {
       width: 100%;
-      text-align: center;
     }
 
 
@@ -104,4 +103,20 @@ body{
     }
   }
 
+
+  @media screen and (max-width: 400px) {
+
+    .logo, .navbar-link {
+      font-size: 12px;
+      font-weight: lighter;
+      float: left;
+    }
+
+    .footer-content {
+      font-size: 10px;
+      font-weight: lighter;
+      letter-spacing: 3px;
+    }
+
+  }
 
