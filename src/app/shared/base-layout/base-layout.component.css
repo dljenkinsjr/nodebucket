@@ -9,15 +9,18 @@ body{
   height: auto;
 }
 
+/*
 .logo {
     font-size: 24px;
     font-weight: lighter;
     float: left;
     margin-left: 74px;
   }
+*/
 
   .navbar-container {
     padding: 5px;
+    margin: auto;
   }
 
   .navbar-link {
@@ -52,7 +55,7 @@ body{
   }
 
   .footer-content p {
-    margin-left: 74px;
+    margin: auto;
   }
 
 
@@ -70,7 +73,6 @@ body{
   @media screen and (max-width: 800px) {
     footer {
       width: 100%;
-      text-align: center;
     }
 
 
@@ -102,6 +104,21 @@ body{
       font-weight: lighter;
       float: left;
     }
+
+    .navbar-container {
+      padding: 5px;
+    }
   }
 
+
+  @media screen and (max-width: 400px) {
+
+    .logo, .navbar-link {
+      font-size: 12px;
+      font-weight: lighter;
+      float: left;
+    }
+
+
+  }
 
