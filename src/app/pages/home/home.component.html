@@ -68,12 +68,12 @@ Description: creating a sign in page
                 <!--Menu-->
                 <div fxFlex fxLayoutAlign="end">
                   <button [matMenuTriggerFor]="todoOptions" class="" mat-icon-button>
-                    <mat-icon>more_horiz</mat-icon>
+                    <mat-icon>cancel</mat-icon>
                   </button>
 
                   <mat-menu #todoOptions="matMenu" x-position="before">
                     <button (click)="deleteTask(item._id)" mat-menu-item>
-                      Remove
+                      Delete
                     </button>
                   </mat-menu>
                 </div>
@@ -123,12 +123,12 @@ Description: creating a sign in page
                 <div fxFlex fxLayoutAlign="end">
 
                   <button [matMenuTriggerFor]="doneOptions" class="" mat-icon-button>
-                    <mat-icon>more_horiz</mat-icon>
+                    <mat-icon>cancel</mat-icon>
                   </button>
 
                   <mat-menu #doneOptions="matMenu" x-position="before">
                     <button (click)="deleteTask(item._id)" mat-menu-item>
-                      Remove
+                      Delete
                     </button>
                   </mat-menu>
                 </div>
